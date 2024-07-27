@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Style</title>
+    <style id="dynamic"></style>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: self-end;
+            gap: 1rem;
+        }
+        .btn{
+           
+            margin: -255px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <label for="bg">Background</label>
+        <input type="color" name="background color" id="background">
+        <label for="fc">Color</label>
+        <input type="color" name="text color" id="color">
+        <label for="padding">Padding</label>
+        <input type="text" name="padding box" id="padding">
+        <label for="border">Border</label>
+        <input type="text" name="border box" id="border">
+        <label for="border-radius">border-radius</label>
+        <input type="text" name="border-radius" id="border-radius">
+        <label for="text">Text</label>
+        <input type="text" name="text" id="text">
+    </div>
+    <div class="btn">
+        <button type="button" id="btn1">Welcome button 1</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
